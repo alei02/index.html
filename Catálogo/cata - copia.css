@@ -1,0 +1,98 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.header{
+	background: #A0522D;
+	margin: 0;
+	padding: 10px 0 10px 0;
+	width: 100%;
+	height: 3em;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+}
+
+#titulo{
+	font-size: 30px;
+	font-family: Arial;
+	color: #fff;
+	text-align: center;
+	font-weight: bold;
+	margin: 3px 0;
+}
+
+.nav{
+	background: #D3D3D3;
+	width: 100%;
+	float: left;
+	height: 3em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	top: 4em;
+	left: 0;
+	z-index: 999;
+}
+.nav ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	gap: 80px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #333;
+    font-family: Arial;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav a:hover {
+    color: #8B4513;
+}
+
+#hierbas, #frutales, #secos, #cremosos {
+    scroll-margin-top: 8em; /* ajusta según la altura de tu header + nav */
+}
+
+.main {
+    width: 100%;
+    margin-top: 8em;
+    padding: 20px;
+}
+
+
+.fila {
+    display: flex;          /* activa flexbox */
+    justify-content: center; /* centra horizontalmente */
+    gap: 40px;              /* espacio entre imágenes */
+    flex-wrap: wrap;        /* permite que bajen si no caben */
+    margin: 20px 0;
+}
+
+.imagen {
+    text-align: center;     /* texto debajo de la imagen */
+}
+
+.imagen img {
+    width: 150px;
+    height: 150px;
+    border: 3px solid #8B4513; /* grosor, estilo y color */
+    border-radius: 8px;        /* esquinas redondeadas */
+    padding: 5px;              /* espacio interno entre imagen y borde */
+    background-color: #fff;    /* fondo dentro del marco */
+}
+
+.imagen img:hover {
+    transform: scale(1.1);        /* agranda la imagen */
+    border-color: brown;          /* cambia el color del marco */
+    cursor: pointer;              /* muestra la manito */
+}
+
