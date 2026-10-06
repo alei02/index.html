@@ -1,0 +1,431 @@
+/* General */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #DCDCDC;
+  color: #333;
+}
+
+/* Header fijo */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #0D2A5C;
+  padding: 15px 30px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header h1 {
+  color: #FFF;
+  font-size: 26px;
+  font-weight: bold;
+  margin: 0;
+  letter-spacing: 2px;
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+header nav ul li {
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  color: #FFF;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+header nav ul li a:hover {
+  background-color: #FFF;
+  color: #0D2A5C;
+}
+
+/* Botón especial para Iniciar Sesión */
+header nav ul li:last-child a {
+  background-color: #D62828;
+  color: #FFF;
+}
+
+header nav ul li:last-child a:hover {
+  background-color: #FFF;
+  color: #D62828;
+}
+
+/* Ajuste del contenido principal */
+main {
+  margin-top: 120px;
+}
+
+/* Banner principal */
+#inicioPrinicpal {
+  background: #f9f9f9;
+  padding: 60px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+/* Bloque de texto a la izquierda */
+#inicioYeah {
+  flex: 1;
+  display: flex;
+  flex-direction: column; /* organiza título, párrafo y botón en columna */
+  align-items: flex-start; /* alineado a la izquierda */
+}
+
+#inicioYeah h1 {
+  font-size: 36px;
+  color: #0D2A5C;
+  margin-bottom: 20px;
+}
+
+#inicioYeah p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Botón debajo del texto */
+#inicioYeah a {
+  display: inline-block;
+  background-color: #D62828;
+  color: #FFF;
+  padding: 14px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+#inicioYeah a:hover {
+  background-color: #0D2A5C;
+}
+
+/* Imagen a la derecha */
+#imagenprinci {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+#imagenprinci img {
+  max-width: 400px;
+  height: 300px;
+  object-fit: cover; /* recorta sin deformar */
+  border-radius: 8px;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+}
+
+/* Nosotros */
+#masNosotros {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 40px;
+  
+}
+
+.contenedorNosotros {
+  flex: 1;
+  margin-right: 40px;
+}
+
+.cuadradoNosotros {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.filaNosotros {
+  display: flex;
+  gap: 20px;
+}
+
+.cuadradoPequeNosotros {
+  flex: 1;
+  background-color: #FFF;
+  padding: 10px;
+  border: 2px solid #0D2A5C;
+  border-radius: 8px;
+}
+
+/* Registro */
+.registroNuevoUsuario {
+  flex: 1;
+  background-color: #FFF;
+  padding: 30px;
+  border: 2px solid #D62828;
+  border-radius: 8px;
+}
+
+.registroNuevoUsuario input,
+.registroNuevoUsuario select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #CCC;
+  border-radius: 4px;
+}
+
+.registroNuevoUsuario button {
+  background-color: #0D2A5C;
+  color: #FFF;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.registroNuevoUsuario button:hover {
+  background-color: #D62828;
+}
+
+/* Misión y Visión */
+.cuadroMision {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 40px;
+}
+
+.textoMision h2 {
+  font-size: 28px;
+  color: #0D2A5C;
+  margin-bottom: 15px;
+}
+
+.textoMision p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.imagenMision img {
+  width: 450px;          
+  height: 350px;       
+  object-fit: cover;    
+  border-radius: 8px;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+}
+
+#cursosDisponibles{
+  padding: 10px;
+}
+
+/* Cursos */
+.filaCursos {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.cursoCuadro {
+  flex: 1;
+  background-color: #FFF;
+  border: 1px solid #CCC;
+  border-radius: 8px;
+  padding: 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.cursoCuadro img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.cursoCuadro h4 {
+  font-size: 18px;
+  color: #0D2A5C;
+  margin: 10px 0 5px;
+}
+
+.cursoCuadro p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Inicio de sesión */
+#formularioInicioSesion {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 2px solid #0D2A5C;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+#formularioInicioSesion h2 {
+  text-align: center;
+  color: #0D2A5C;
+}
+
+#formularioInicioSesion input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #CCC;
+  border-radius: 4px;
+}
+
+#formularioInicioSesion button {
+  width: 100%;
+  background-color: #D62828;
+  color: #FFF;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#formularioInicioSesion button:hover {
+  background-color: #0D2A5C;
+}
+
+/* Mensajes del script */
+#mensajeRegistro {
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 6px;
+  font-weight: bold;
+  text-align: center;
+  background-color: #fff;
+  color: #155724;
+  border: none;
+}
+
+#iniciarSesion div {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #e9f7fe;
+  border: 1px solid #b6e0f5;
+  border-radius: 8px;
+  text-align: center;
+  color: #0D2A5C;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #0D2A5C;
+  color: #FFF;
+}
+
+/* Responsive tablets */
+@media (max-width: 992px) {
+  /* Inicio */
+  #inicioPrinicpal {
+    flex-direction: column;
+    text-align: center;
+  }
+  #inicioYeah {
+    align-items: center;
+  }
+  #imagenprinci img {
+    max-width: 80%;
+    height: 250px;
+  }
+
+  /* Nosotros */
+  #masNosotros {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .contenedorNosotros {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .filaNosotros {
+    flex-direction: column;
+  }
+  .registroNuevoUsuario {
+    width: 100%;
+  }
+
+  /* Misión y Visión */
+  .cuadroMision {
+    flex-direction: column;
+    text-align: center;
+  }
+  .imagenMision img {
+    max-width: 80%;
+    height: 250px;
+  }
+
+  /* Cursos */
+  .filaCursos {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .cursoCuadro {
+    flex: 0 0 45%; /* dos por fila en tablet */
+    margin-bottom: 20px;
+  }
+}
+
+/* Responsive celulares */
+@media (max-width: 600px) {
+  /* Header */
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  header nav ul {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  /* Inicio */
+  #inicioYeah h1 {
+    font-size: 24px;
+  }
+  #inicioYeah p {
+    font-size: 16px;
+  }
+  #imagenprinci img {
+    height: 200px;
+    max-width: 100%;
+  }
+
+  /* Misión y Visión */
+  .textoMision p {
+    font-size: 16px;
+  }
+  .imagenMision img {
+    height: 200px;
+    max-width: 100%;
+  }
+
+  /* Cursos */
+  .filaCursos {
+    flex-direction: column;
+  }
+  .cursoCuadro {
+    flex: 1 1 100%; /* uno por fila en celular */
+  }
+  .cursoCuadro img {
+    height: 120px;
+  }
+}
